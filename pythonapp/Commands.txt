@@ -1,0 +1,15 @@
+# docker build -t flask-container .
+
+# docker run -d -p 5000:5000 flask-container
+
+# curl http://localhost:5000
+
+
+## Push to Docker Hub
+
+# docker login
+# docker tag flask-container:latest umeshphendarkar/repo3:flask-v1
+# docker push umeshphendarkar/repo3:flask-v1
+
+
+# docker run -d -p 5000:5000 umeshphendarkar/repo3:flask-v1
